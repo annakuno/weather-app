@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>Weather App</title>
+	<link rel="stylesheet" href="css/styles.css" />
+    <link href="https://erikflowers.github.io/weather-icons/css/weather-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Outline" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+</head>
+    <body>
+        <div class="first">
+            <div class="form-row">
+                <h1 class="form-title">Location?</h1>
+                <div class="location-form">
+                    <input type="text" class="input location-input" name="location" id="city">
+                </div>
+            </div>
+            <div class="form-row">
+            <button class="submit-button">
+                 Tell me the weather!
+            </button>
+            </div>   
+        </div>
+        <div class="results">
+            <div class="results1">
+                <div class="nav-form">
+                    <div class="results-head">
+                    <h1>Here's the weather for&nbsp;<h1 class="address"></h1></h1>
+                    </div>
+                    <div class="location-bar">
+                        <h1 class="nav-form-title">Location:</h1>
+                        <div class="nav-form-location">
+                            <input type="text" class="nav-input location-input" name="location" id="city2">
+                            <button class="nav-submit-button">Search</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="results-body">
+                    <div class="results-text">
+                        <h1 class="now">right now</h1>
+                        <h2 class="condition"></h2>
+                        <div class="temp-line">         
+                            <h2>Temperature:  </h2><h2 class="temp"></h2> &#8457;
+                        </div>
+                        <div class="precip-line">
+                            <h2>Chance of precipitation: </h2><h2 class="precip"></h2>&#37;
+                        </div>
+                    </div>
+                    <div class="today">
+                        <h1 class="today-head">today</h1>
+                        <div class="max-line">
+                            <h2>High:</h2> 
+                            <h2 class="today-max-temp"></h2> &#8457;
+                        </div>
+                        <div class="min-line">
+                            <h2>Low:</h2>
+                            <h2 class="today-min-temp"></h2> &#8457;
+                        </div>
+                        <div class="precip-line">
+                            <h2>Chance of precipitation:</h2>
+                            <h2 class="today-precip"></h2>&#37;
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="upcoming-head"><h1 class="later">later this week</h1></div>
+        <div class="upcoming">
+        </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script type="text/javascript" src="vendor/moment.js"></script>
+    <script src="weather.js" type="text/javascript"></script>
+    </body>
+</html> 
